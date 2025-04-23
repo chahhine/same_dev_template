@@ -1,0 +1,7 @@
+<div id="nav-ps-next" class="navbar-content" [ngClass]="{'ps': true}">
+  <ul class="nav pcoded-inner-navbar" (clickOutside)="fireOutClick()">
+    <ng-container *ngFor="let item of navigationalItems">
+      <app-nav-group *ngIf="item.type=='group'" [item]="item"></app-nav-group>
+    </ng-container>
+  </ul>
+</div>

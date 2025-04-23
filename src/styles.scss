@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "scss/style.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import 'ngx-perfect-scrollbar/css/perfect-scrollbar.css';
+
+body {
+  margin: 0;
+  font-family: 'Mada', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+  background-color: #f4f7fa;
+}

@@ -1,0 +1,69 @@
+<div class="auth-wrapper">
+  <div class="auth-content">
+    <div class="card">
+      <div class="card-body text-center">
+        <div class="mb-4">
+          <i class="feather icon-unlock auth-icon"></i>
+        </div>
+        <h3 class="mb-4">Login</h3>
+
+        <!-- Success message -->
+        <div *ngIf="successMessage" class="alert alert-success mb-3">
+          {{ successMessage }}
+        </div>
+
+        <!-- Error message -->
+        <div *ngIf="error" class="alert alert-danger mb-3">
+          {{ error }}
+        </div>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="input-group mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              formControlName="email"
+              [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+            >
+            <app-form-error [control]="f['email']" fieldName="email"></app-form-error>
+          </div>
+
+          <div class="input-group mb-4">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              formControlName="password"
+              [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+            >
+            <app-form-error [control]="f['password']" fieldName="password"></app-form-error>
+          </div>
+
+          <div class="form-group text-left">
+            <div class="checkbox checkbox-fill d-inline">
+              <input
+                type="checkbox"
+                id="checkbox-fill-a1"
+                formControlName="rememberMe"
+              >
+              <label for="checkbox-fill-a1" class="cr"> Save credentials</label>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary shadow-2 mb-4"
+            [disabled]="loading"
+          >
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            Login
+          </button>
+        </form>
+
+        <p class="mb-2 text-muted">Forgot password? <a [routerLink]="['/auth/reset-password']">Reset</a></p>
+        <p class="mb-0 text-muted">Don't have an account? <a [routerLink]="['/auth/signup']">Sign up</a></p>
+      </div>
+    </div>
+  </div>
+</div>

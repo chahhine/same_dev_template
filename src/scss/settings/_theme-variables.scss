@@ -1,0 +1,84 @@
+// =======================================
+//     Theme Variables for Layout
+// =======================================
+
+/*
+    Description of variables for building theme layouts:
+
+    1) menu-caption-color
+        List of colors for sidebar menu caption
+
+    2) brand-background
+        List of colors for logo background
+
+    3) header-dark-background
+        List of colors for Dark Header
+
+    4) header-light-background
+        List of colors for Light Header
+
+    5) menu-dark-background
+        List of colors for Dark sidebar menu
+
+    6) menu-light-background
+        List of colors for Light sidebar menu
+
+    7) menu-active-color
+        List of colors for Active item highlighter
+
+    8) menu-icon-color
+        List of colors for sidebar menu items icon colors
+*/
+
+// Theme color variables
+$theme-color: (
+  primary: #4680ff,
+  secondary: #6c757d,
+  success: #3ebf9f,
+  info: #4099ff,
+  warning: #FFB64D,
+  danger: #FF5370,
+  light: #f8f9fa,
+  dark: #263544
+);
+
+$color-name-list: primary, secondary, success, info, warning, danger, light, dark;
+$color-list: #4680ff, #6c757d, #3ebf9f, #4099ff, #ffb64d, #ff5370, #f8f9fa, #263544;
+$color-tint-list: #eff5ff, #e9ecef, #eaf9f6, #eaf5ff, #fff0e1, #fff0f3, #ffffff, #f1f1f1;
+
+// Layout color variables
+$layout-color: (
+  dark: #263544
+);
+
+// Bootstrap color variables
+$primary: #4680ff;
+$secondary: #6c757d;
+$success: #3ebf9f;
+$info: #4099ff;
+$warning: #FFB64D;
+$danger: #FF5370;
+$light: #f8f9fa;
+$dark: #263544;
+
+// Layout variables
+$header-height: 70px;
+$Menu-width: 264px;
+$Menu-collapsed-width: 70px;
+
+// Header
+$header-color: #fff;
+$header-dark-color: rgba(255, 255, 255, 0.8);
+
+// Menu
+$menu-light-background: #fff;
+$menu-dark-background: #101b33;
+$menu-light-color: #393e46;
+$menu-dark-color: #cfcfcf;
+
+// Font
+$theme-font-family: 'Mada', sans-serif;
+$theme-font-size: 14px;
+$theme-background: #f4f7fa;
+$theme-font-color: #333;
+$theme-heading-color: #111;

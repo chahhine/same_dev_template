@@ -1,0 +1,12 @@
+<div class="navbar-wrapper" [ngClass]="{'container': false}">
+  <div class="navbar-brand header-logo">
+    <a [routerLink]="['/dashboard/analytics']" class="b-brand">
+      <img src="assets/images/logo-icon.png" alt="" class="logo-icon">
+      <span class="b-title">Next</span>
+    </a>
+    <a (click)="navCollapsed = !navCollapsed" href="javascript:" class="mobile-menu" [ngClass]="{'on' : navCollapsed}"><span></span></a>
+  </div>
+  <div class="navbar-content scroll-div" [style.height]="'calc(100% - 70px)'" [ngClass]="{'ps': true}" #navbarContent>
+    <app-nav-content [navCollapsed]="navCollapsed" (onNavCollapsedMob)="navCollapsedMob = !navCollapsedMob"></app-nav-content>
+  </div>
+</div>

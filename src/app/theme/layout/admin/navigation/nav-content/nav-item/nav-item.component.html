@@ -1,0 +1,27 @@
+<ng-container *ngIf="!item.external">
+  <li class="nav-item" [ngClass]="{'active': isActive}">
+    <a [routerLink]="[item.url]" class="nav-link" [target]="item.target ? '_blank' : '_self'" (click)="closeOtherMenu($event)">
+      <ng-container *ngIf="item.icon">
+        <span class="pcoded-micon"><i class="{{item.icon}}"></i></span>
+      </ng-container>
+      <span class="pcoded-mtext">{{item.title}}</span>
+      <ng-container *ngIf="item.badge && item.badge.title">
+        <span class="pcoded-badge label" [ngClass]="item.badge.type">{{item.badge.title}}</span>
+      </ng-container>
+    </a>
+  </li>
+</ng-container>
+
+<ng-container *ngIf="item.external">
+  <li class="nav-item">
+    <a href="{{item.url}}" target="_blank" class="nav-link">
+      <ng-container *ngIf="item.icon">
+        <span class="pcoded-micon"><i class="{{item.icon}}"></i></span>
+      </ng-container>
+      <span class="pcoded-mtext">{{item.title}}</span>
+      <ng-container *ngIf="item.badge && item.badge.title">
+        <span class="pcoded-badge label" [ngClass]="item.badge.type">{{item.badge.title}}</span>
+      </ng-container>
+    </a>
+  </li>
+</ng-container>

@@ -1,0 +1,83 @@
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f6f7fb;
+
+  .auth-content {
+    max-width: 400px;
+    width: 100%;
+    padding: 15px;
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    .auth-icon {
+      font-size: 70px;
+      color: #4680ff;
+    }
+
+    .btn-primary {
+      background-color: #4680ff;
+      border-color: #4680ff;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}
+
+// Input field invalid styling
+.form-control.is-invalid {
+  border-color: #f44336;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23f44336' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23f44336' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.checkbox-fill input[type=checkbox]+.cr:before {
+  border-radius: 3px;
+  border: 1px solid #e2e5e8;
+  background: #fff;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+  position: absolute;
+  margin-left: -30px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.checkbox input[type=checkbox]:checked+.cr:before {
+  background: #4680ff;
+  border-color: #4680ff;
+}
+
+.checkbox input[type=checkbox]+.cr:before {
+  content: "";
+  display: inline-block;
+  float: left;
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.checkbox input[type=checkbox]:checked+.cr:after {
+  font-family: "feather";
+  content: "\e83f";
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  font-size: 12px;
+  color: #fff;
+  transition: all .2s;
+}

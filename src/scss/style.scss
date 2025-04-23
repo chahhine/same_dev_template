@@ -1,0 +1,18 @@
+@import "settings/theme-variables";
+@import "settings/custom-variables";
+
+// Themes
+@import "themes/font/theme-font";
+@import "themes/font/feather";
+@import "themes/font/fontawesome";
+@import "themes/generic";
+@import "themes/general";
+@import "themes/bootstrap-overlay/badge";
+@import "themes/bootstrap-overlay/button";
+@import "themes/bootstrap-overlay/card";
+@import "themes/bootstrap-overlay/radiobox-checkbox";
+@import "themes/bootstrap-overlay/switches";
+@import "themes/layouts/menu-lite";
+@import "themes/layouts/menu-ng";
+@import "themes/dashboard/widget";
+@import "themes/custom";

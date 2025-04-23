@@ -1,0 +1,30 @@
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f6f7fb;
+
+  .auth-content {
+    max-width: 400px;
+    width: 100%;
+    padding: 15px;
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    .auth-icon {
+      font-size: 70px;
+      color: #4680ff;
+    }
+
+    .btn-primary {
+      background-color: #4680ff;
+      border-color: #4680ff;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}
